@@ -1,0 +1,4 @@
+@EndUserText.label: 'GET DATA IN FIORI'
+define service ZITG_SL_FINALO4 {
+  expose zitg_BSACDS_Final;
+}
