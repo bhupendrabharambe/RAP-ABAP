@@ -1,0 +1,27 @@
+managed implementation in class zbp_itg_root_so unique;
+strict ( 2 );
+
+define behavior for zitg_root_so //alias <alias_name>
+persistent table zbb_dt_so
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) Soid;
+  association _Items { create; }
+}
+
+define behavior for ZI_SOITEM //alias <alias_name>
+persistent table zbb_dt_soit
+lock dependent by _Header
+authorization dependent by _Header
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) Soid;
+  association _Header;
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'so service de'
+define service Zitg_sd_re_so {
+  expose ZITG_RE_SO;
+  expose ZITG_SOITEM_ENTITY;
+  expose zitg_prd_entity;
+}

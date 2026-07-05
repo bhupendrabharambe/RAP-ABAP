@@ -1,0 +1,4 @@
+@EndUserText.label: 'Serveice defination'
+define service Zdd_cds_so {
+  expose zbb_cds_so;
+}

@@ -1,0 +1,40 @@
+@Metadata.layer: #CORE
+annotate entity zbb_cds_so
+    with 
+{
+    @UI.lineItem: [{ position:10 }]
+    @UI.selectionField: [{ position:10 }]
+    @EndUserText.label: 'Sales Order Number'
+    Soid;
+    
+    @UI.lineItem: [{ position: 20, label: 'Buyer' }]
+    Buyer;
+    
+    @UI.lineItem: [{ position: 30, label: 'Sales Person' }]
+    SalesPerson;
+    
+    @UI.lineItem: [{ position: 40, label: 'Sales TimeStamp' }]
+    SalesTimestamp;
+    
+    @UI.lineItem: [{ position: 50, label: 'Sales Manager' }]
+    SalesManager;
+    
+    @UI.lineItem: [{ position: 60, label: 'Approval Timestamp' }]
+    ApprovalTimestamp;
+    
+    @UI.lineItem: [{ position: 70, label: 'CreatedBy' }]
+    CreatedBy;
+    
+    @UI.lineItem: [{ position: 80, label: 'CreatedOn' }]
+    CreatedOn;
+    
+    @UI.lineItem: [{ position: 90, label: 'ChangedBy' }]
+    ChangedBy;
+    
+    @UI.lineItem: [{ position: 100, label: 'ChangedOn' }]
+    ChangedOn;
+    
+    @UI.lineItem: [{ position: 110, label: 'Url' }]
+    Url;
+    
+}

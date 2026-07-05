@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_ITG_BSACDS_FINAL001'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_ITG_BSACDS_FINAL001'
+  }
+}
+define service ZUI_ITG_BSACDS_FINAL001_O4 provider contracts odata_v4_ui {
+  expose ZC_ITG_BSACDS_FINAL001;
+}

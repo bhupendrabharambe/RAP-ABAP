@@ -1,0 +1,5 @@
+@EndUserText.label: 'ui for sales order'
+define service ZUI_SALESORDER {
+  expose ZC_SALESORDER1;
+  expose zc_soitem;
+}
