@@ -2,6 +2,16 @@
 annotate entity ZITG_SOITEM_ENTITY
 with
 {
+
+@UI.facet: [
+  {
+    id            : 'Product',
+    type          : #IDENTIFICATION_REFERENCE,
+    targetElement : 'prd',
+    label         : 'Product Details',
+    position      : 10
+  }
+]
   @EndUserText.label: 'Sales Order ID'
   @UI: {
     lineItem:       [ { position: 10 } ],

@@ -1,0 +1,38 @@
+@Metadata.layer: #CUSTOMER
+annotate entity zitg_prd_entity
+with
+{
+
+  @EndUserText.label: 'Product ID'
+  @UI: {
+    lineItem:       [ { position: 10 } ],
+    identification: [ { position: 10 } ],
+    selectionField: [ { position: 10 } ]
+  }
+  ProdId;
+
+  @EndUserText.label: 'Description'
+  @UI: {
+    lineItem:       [ { position: 20 } ],
+    identification: [ { position: 20 } ],
+    selectionField: [ { position: 20 } ]
+  }
+  Descpt;
+
+  @EndUserText.label: 'Price'
+  @UI: {
+    lineItem:       [ { position: 30 } ],
+    identification: [ { position: 30 } ],
+    selectionField: [ { position: 30 } ]
+  }
+  Price;
+
+  @EndUserText.label: 'Currency'
+  @UI: {
+    lineItem:       [ { position: 40 } ],
+    identification: [ { position: 40 } ],
+    selectionField: [ { position: 40 } ]
+  }
+  Currency;
+
+}

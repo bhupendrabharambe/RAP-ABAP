@@ -1,0 +1,103 @@
+@Metadata.layer: #CUSTOMER
+annotate entity ZITG_RE_SO
+with
+{
+
+@UI.facet: [
+  {
+    id            : 'General',
+    type          : #IDENTIFICATION_REFERENCE,
+    position      : 10
+  },
+  {
+    id            : 'Item',
+    type          : #LINEITEM_REFERENCE,
+    targetElement : '_item',
+    label         : 'Item Details',
+    position      : 20
+  }
+]
+
+
+
+  @EndUserText.label: 'Sales Order ID'
+  @UI: {
+    lineItem:        [ { position: 10 } ],
+    identification:  [ { position: 10 } ],
+    selectionField:  [ { position: 10 } ]
+  }
+  Soid;
+
+  @EndUserText.label: 'Buyer'
+  @UI: {
+    lineItem:        [ { position: 20 } ],
+    identification:  [ { position: 20 } ],
+    selectionField:  [ { position: 20 } ]
+  }
+  Buyer;
+
+  @EndUserText.label: 'Sales Person'
+  @UI: {
+    lineItem:        [ { position: 30 } ],
+    identification:  [ { position: 30 } ],
+    selectionField:  [ { position: 30 } ]
+  }
+  SalesPerson;
+
+  @EndUserText.label: 'Sales Timestamp'
+  @UI: {
+    lineItem:        [ { position: 40 } ],
+    identification:  [ { position: 40 } ],
+    selectionField:  [ { position: 40 } ]
+  }
+  SalesTimestamp;
+
+  @EndUserText.label: 'Sales Manager'
+  @UI: {
+    lineItem:       [ { position: 50 } ],
+    identification: [ { position: 50 } ]
+  }
+  SalesManager;
+
+  @EndUserText.label: 'Approval Timestamp'
+  @UI: {
+    lineItem:       [ { position: 60 } ],
+    identification: [ { position: 60 } ]
+  }
+  ApprovalTimestamp;
+
+  @EndUserText.label: 'Created By'
+  @UI: {
+    lineItem:       [ { position: 70 } ],
+    identification: [ { position: 70 } ]
+  }
+  CreatedBy;
+
+  @EndUserText.label: 'Created On'
+  @UI: {
+    lineItem:       [ { position: 80 } ],
+    identification: [ { position: 80 } ]
+  }
+  CreatedOn;
+
+  @EndUserText.label: 'Changed By'
+  @UI: {
+    lineItem:       [ { position: 90 } ],
+    identification: [ { position: 90 } ]
+  }
+  ChangedBy;
+
+  @EndUserText.label: 'Changed On'
+  @UI: {
+    lineItem:       [ { position: 100 } ],
+    identification: [ { position: 100 } ]
+  }
+  ChangedOn;
+
+  @EndUserText.label: 'URL'
+  @UI: {
+    lineItem:       [ { position: 110 } ],
+    identification: [ { position: 110 } ]
+  }
+  Url;
+}
